@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - function that prints alphabets in lower and upper case
+ * main - main function
+ *
+ * Description - function that prints alphabets in lower and upper case
  *
  * Return always 0
  */
