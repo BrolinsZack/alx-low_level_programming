@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /* more headers goes there */
-
+#include <stdio.h>
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
@@ -25,6 +24,6 @@ int main(void)
 		printf("last digit of  %d is %d and is 0\n", n, m);
 	if (m < 6 && m != 0)
 		printf("Last digit of %d id %d and is Less than 6 and not 0\n", n, m);
+	printf("\n");
 	return (0);
 }
-
