@@ -3,9 +3,9 @@
 /**
  * main - main function
  *
- * Description - function that prints alphabets in lower and upper case
+ * Description - 'function that prints alphabets in lower and upper case'
  *
- * Return always 0
+ * Return: always 0
  */
 
 int main(void)
