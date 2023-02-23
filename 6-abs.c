@@ -1,4 +1,5 @@
 include "main.h"
+#include <unistd.h>
 
 /**
  * _abs - checks for an absolute value
@@ -9,6 +10,6 @@ include "main.h"
 int _abs(int b)
 {
 	if (b < 0)
-		a = -b;
+		b = -b;
 	return (b);
 }
