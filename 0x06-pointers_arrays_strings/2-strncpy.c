@@ -2,9 +2,9 @@
 
 /**
  * _strncpy - Copy a string with n
- * @dest: input value
- * @src: input value
- * @n: input value
+ * @dest: copy to
+ * @src: copy from
+ * @n: number of char to be copied
  * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
