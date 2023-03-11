@@ -2,11 +2,13 @@
 
 int actual_sqrt_recursion(int n, int i);
 
+int _sqrt(int, int);
+
 /**
  * _sqrt_recursion - returns the natural square root of a number
- * @n: number to calculate the square root of
+ * @n: parameter to be squarerooted
  *
- * Return: the resulting square root
+ * Return: the square root number
  */
 int _sqrt_recursion(int n)
 {
@@ -16,12 +18,12 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * actual_sqrt_recursion - recurses to find the natural
+ * actual_sqrt_recursion - recursive square root
  * square root of a number
  * @n: number to calculate the sqaure root of
  * @i: iterator
  *
- * Return: the resulting square root
+ * Return: always 0
  */
 int actual_sqrt_recursion(int n, int i)
 {
