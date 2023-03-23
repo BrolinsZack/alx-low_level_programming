@@ -10,19 +10,24 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-op_t ops[] = {
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
 		{"/", op_div},
 		{"%", op_mod},
-		{NULL, NULL},
+		{NULL, NULL}
 	};
+	int index;
 
-	int i = 0;
+	index = 0;
+	while (ops[index].f != NULL)
+	{
+		if (*s == *(ops[index].op) && s[1] == '\0')
+			return (ops[index].f);
+		index++;
+	}
 
-	while (ops[i].op != NULL && *(ops[i].op) != *s)
-		i++;
-
-	return (ops[i].f);
+	printf("Error\n");
+	exit(99);
 }
